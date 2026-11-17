@@ -1,0 +1,15 @@
+# 统一换行，避免 Windows / macOS / Linux 之间整文件 diff
+* text=auto
+
+*.java       text eol=lf
+*.xml        text eol=lf
+*.md         text eol=lf
+*.txt        text eol=lf
+*.ps1        text eol=crlf
+*.bat        text eol=crlf
+
+# 二进制
+*.apk        binary
+*.ttf        binary
+*.png        binary
+*.jks        binary

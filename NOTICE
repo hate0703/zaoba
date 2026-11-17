@@ -1,0 +1,35 @@
+第三方素材与许可
+
+代码以 MIT 授权，见 LICENSE。本文件只说明「代码许可之外」的部分。
+
+
+1. 字体：钟齐志莽行书（Zhi Mang Xing）
+
+  文件：android/assets/fonts/ZhiMangXing-Regular.ttf
+  用于：流浪地球主题的页面标题
+
+  SIL Open Font License 1.1，可免费使用、修改与随软件再分发（含商用）。
+  正文：android/assets/fonts/OFL.txt（取自 https://openfontlicense.org）
+
+  OFL 的义务：
+  - 分发时附带这份正文（已随包放在字体同目录）；
+  - 若修改了字体文件本身，不得继续使用保留字体名（Reserved Font Name）；
+  - 不得单独售卖字体文件本身。
+
+  该授权独立于 MIT，不受其影响。
+
+
+2. 设计参考（不含任何官方素材）
+
+  - 《明日方舟》PRTS 设计规范：https://mooncellwiki.github.io/prts-design/
+  - icaruszezen/endfield-ui（《明日方舟：终末地》设计令牌）
+
+  仅参考配色、形状与排版语言，未包含上述作品的任何图片、图标、
+  字体或其它官方素材。相关作品版权归鹰角网络所有。
+
+
+3. 本仓库不包含
+
+  - 任何游戏资源（贴图、音频、UI 切图）
+  - 任何商业字体
+  - 任何第三方 Java / Android 依赖（全部使用 Android 框架 API）

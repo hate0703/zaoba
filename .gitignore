@@ -1,0 +1,44 @@
+# ── 构建产物 ──────────────────────────────
+android/build/
+android/早八.apk
+*.class
+*.dex
+*.apk
+*.idsig
+
+# ── 签名（绝对不要提交）──────────────────
+*.jks
+*.keystore
+*.p12
+*.pem
+
+# ── 设备与调试产物 ────────────────────────
+_shot/
+alarms.applied-*.json
+*.log
+
+# ── 系统垃圾 ──────────────────────────────
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ── 编辑器 ────────────────────────────────
+.idea/
+.vscode/
+*.iml
+*.swp
+
+# ── 早期 PC / 网页版残留（不属于安卓 App）──
+早八.html
+serve.js
+PC闹钟守护.ps1
+安装电脑闹钟.bat
+启动手机版.bat
+_test/
+alarm.log
+
+# ── 本机签名口令（绝不提交）─────────────
+android/signing.local.ps1
+
+# ── 个人数据（真实课表，不进公开仓库）────
+我的课表.json
