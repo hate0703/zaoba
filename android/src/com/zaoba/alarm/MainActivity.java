@@ -1510,14 +1510,6 @@ public class MainActivity extends Activity {
         foot.setLayoutParams(fp);
         content.addView(foot);
 
-        TextView disc = Ui.tv(this, "各主题为独立的视觉风格设计，未使用《明日方舟》《明日方舟：终末地》"
-                + "《流浪地球》的任何官方素材，与上述作品的著作权人、商标权人无任何关联；"
-                + "相关名称与商标归各自权利人所有。", 10.5f, Ui.DIM);
-        LinearLayout.LayoutParams dp2 = Ui.lp(-2, -2);
-        dp2.topMargin = dp(14);
-        disc.setLayoutParams(dp2);
-        content.addView(disc);
-
         settingsReady = true;
     }
 
@@ -1597,6 +1589,14 @@ public class MainActivity extends Activity {
             content.addView(card);
             content.addView(Ui.gap(this, 10));
         }
+
+        TextView disc = Ui.tv(this, "各主题为独立的视觉风格设计，未使用《明日方舟》《明日方舟：终末地》"
+                + "《流浪地球》的任何官方素材，与上述作品的著作权人、商标权人无任何关联；"
+                + "相关名称与商标归各自权利人所有。", 10.5f, Ui.DIM);
+        LinearLayout.LayoutParams dcp = Ui.lp(-2, -2);
+        dcp.topMargin = dp(6);
+        disc.setLayoutParams(dcp);
+        content.addView(disc);
     }
 
     private void askPerms() {
