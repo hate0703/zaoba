@@ -199,8 +199,8 @@ public class Theme {
         Theme con = new Theme();
         con.id = "console";
         con.name = "控制台";
-        con.brand = "CONSOLE";
-        con.brandSub = "课表闹钟";
+        con.brand = "早八";
+        con.brandSub = "CONSOLE";
         con.bg = 0xFF070A0F;
         con.card = 0xFF0B1017;
         con.card2 = 0xFF101822;
