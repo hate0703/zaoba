@@ -5,10 +5,10 @@
 安卓 App，纯 Java、零第三方依赖、**没有任何网络权限**——课表只存在你本机。
 
 <p align="center">
-  <img src="docs/screenshots/01-today.png" width="24%" alt="今天" />
-  <img src="docs/screenshots/02-prts.png" width="24%" alt="PRTS 主题" />
-  <img src="docs/screenshots/03-earth.png" width="24%" alt="流浪地球主题" />
-  <img src="docs/screenshots/04-themes.png" width="24%" alt="主题选择" />
+  <img src="docs/screenshots/01-today.png?v=2" width="24%" alt="今天" />
+  <img src="docs/screenshots/02-prts.png?v=2" width="24%" alt="PRTS 主题" />
+  <img src="docs/screenshots/03-earth.png?v=2" width="24%" alt="流浪地球主题" />
+  <img src="docs/screenshots/04-themes.png?v=2" width="24%" alt="主题选择" />
 </p>
 
 <p align="center">
