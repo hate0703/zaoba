@@ -38,6 +38,16 @@ $linkArgs = @('link', '-o', $base, '-I', $AJ, '--manifest', 'AndroidManifest.xml
               '--version-code', "$VersionCode", '--version-name', $VersionName, '--auto-add-overlay')
 if (Test-Path 'assets') { $linkArgs += @('-A', 'assets') }
 if (Test-Path $resZip) { $linkArgs += $resZip }
+# aapt2 的 --version-code 仅在清单缺省时生效，因此按参数回写清单，保证唯一来源
+$mf = Join-Path $here 'AndroidManifest.xml'
+$mt = [IO.File]::ReadAllText($mf)
+$mt2 = [regex]::Replace($mt, 'android:versionCode="\d+"', "android:versionCode=`"$VersionCode`"")
+$mt2 = [regex]::Replace($mt2, 'android:versionName="[^"]*"', "android:versionName=`"$VersionName`"")
+if ($mt2 -ne $mt) {
+    [IO.File]::WriteAllText($mf, $mt2)
+    Write-Host "  清单版本已回写: $VersionCode / $VersionName"
+}
+
 & "$BT\aapt2.exe" @linkArgs
 if ($LASTEXITCODE -ne 0) { throw 'aapt2 link 失败' }
 
