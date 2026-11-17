@@ -127,8 +127,8 @@ public class Theme {
         Theme prts = new Theme();
         prts.id = "prts";
         prts.name = "PRTS";
-        prts.brand = "PRTS";
-        prts.brandSub = "课表闹钟";
+        prts.brand = "早八";
+        prts.brandSub = "PRTS";
         prts.bg = 0xFF000000;
         prts.card = 0xFF181818;
         prts.card2 = 0xFF1D1F20;
