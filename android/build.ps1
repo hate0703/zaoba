@@ -1,6 +1,8 @@
 ﻿param(
   [switch]$SkipSign,
-  [string]$OutName = '早八.apk'
+  [string]$OutName = '早八.apk',
+  [int]$VersionCode = 1,
+  [string]$VersionName = '1.0'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -33,7 +35,7 @@ Write-Host '[2/6] aapt2 链接清单'
 $base = "$out\base.apk"
 $linkArgs = @('link', '-o', $base, '-I', $AJ, '--manifest', 'AndroidManifest.xml',
               '--java', "$out\gen", '--min-sdk-version', '24', '--target-sdk-version', '33',
-              '--version-code', '1', '--version-name', '1.0', '--auto-add-overlay')
+              '--version-code', "$VersionCode", '--version-name', $VersionName, '--auto-add-overlay')
 if (Test-Path 'assets') { $linkArgs += @('-A', 'assets') }
 if (Test-Path $resZip) { $linkArgs += $resZip }
 & "$BT\aapt2.exe" @linkArgs
